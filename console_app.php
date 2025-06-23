@@ -31,6 +31,7 @@ if ($isEvening) {
 while (true) {
     $input = trim(fgets(STDIN));
 
+    echo $greeting . "\n";
     echo strrev($input) . "\n";
 
     $cleaned = strtolower(preg_replace('/[^a-zA-Z0-9]/u', '', $input));
